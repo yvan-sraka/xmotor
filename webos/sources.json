@@ -1,0 +1,11 @@
+[
+    {"source": "app/assistants/stage-assistant.js"},
+    {
+        "scenes": "WebView",
+        "source": "app/assistants/WebView-assistant.js"
+    },
+    {
+        "scenes": "errorWifi",
+        "source": "app/assistants/errorWifi-assistant.js"
+    }
+]

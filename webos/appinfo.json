@@ -1,0 +1,10 @@
+{
+	"id": "com.mobile.xmotor",
+	"version": "3.5.0",
+	"vendor": "Yvan Sraka",
+	"type": "web",
+	"main": "index.html",
+	"title": "xmotor",
+	"icon": "icon.png",
+    "uiRevision": "2"
+}
