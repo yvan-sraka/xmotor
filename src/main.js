@@ -23,7 +23,7 @@ pkg.require({
   'Gtk': '3.0'
 });
 
-const { Gio, Gtk } = imports.gi;
+const { Gio, Gtk, WebKit2 } = imports.gi;
 
 const { QuarkWindow } = imports.window;
 
@@ -40,7 +40,10 @@ function main(argv) {
             activeWindow = new QuarkWindow(app);
         }
 
-        activeWindow.present();
+        let webview = new WebKit2.WebView();
+        webview.load_uri('file://index.html');
+        activeWindow.add(webview);
+        activeWindow.show_all();
     });
 
     return application.run(argv);

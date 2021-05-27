@@ -21,7 +21,6 @@ const { GObject, Gtk } = imports.gi;
 var QuarkWindow = GObject.registerClass({
     GTypeName: 'QuarkWindow',
     Template: 'resource:///org/example/App/window.ui',
-    InternalChildren: ['label']
 }, class QuarkWindow extends Gtk.ApplicationWindow {
     _init(application) {
         super._init({ application });
